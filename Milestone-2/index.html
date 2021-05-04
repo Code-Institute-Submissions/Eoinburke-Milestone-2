@@ -1,55 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width initial-scale=1.0'>
         <title>Milestone-2</title>
-        <link rel='stylesheet' href='style.css'>
+        <link href="css/style.css" rel="stylesheet">
+        
+       </head>
+    <body>
 <section>
+    <div class='bannerVideo' id='slideShow'>
+        <video src='milestone/video/video1.mp4' autoplay muted loop class='active'></video>
+         <video src='milestone/video/video2.mp4' autoplay muted loop></video>
+          <video src='milestone/video/video3.mp4' autoplay muted loop></video>
+           <video src='milestone/video/video4.mp4' autoplay muted loop></video>
+            <video src='milestone/video/video5.mp4' autoplay muted loop></video>
+    </div>
     <div class='container'>
         <header id='navbar'>
             <a href='#' class='logo'>Java</a>
             <ul>
-                <li><a href='#' class='active'>Home</a></li>
-                 <li><a href='#'>Travel</a></li>
-                  <li><a href='#'>Book</a></li>
-                   <li><a href='#'>Contact</a></li>
+                <li><a href='index.html' class='active'>Home</a></li>
+                 <li><a href='travel.html'>Travel</a></li>
+                  <li><a href='book.html'>Book</a></li>
+                   <li><a href='contact.html'>Contact</a></li>
             </ul>
+            <span class='menuIcon' onclick='toggleMenu();'></span>
             </header>
             <div class="content">
-                <div class='bannerText'>
-                <div class='active'>
+            <div class='bannerText' id='slideShowText'>
+            <div class='active'>
                 <h2>Ireland</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>
+a castle in the countryside of Connemara, Ireland
+I loved backpacking around Ireland: rolling green hills, castles, beautiful sheer cliffs, Guinness beer, and ultra-friendly locals.
+<br>
+Backpacking Ireland is a really underappreciated activity. So many people come here, hit the major sites, drink a pint in Dublin, and head home.
+But there is so much more to traveling here.
+<br>
+Even if you aren’t going to travel here with a backpack, spend some extended time here.
+I think the best way to explore this country is by renting a car and driving around to the little small villages and just seeing what happens. Locals are really friendly and love sharing a story with strangers over a pint.
+<br>
+(Though if you can’t see Ireland that way, there’s plenty of other ways to get around so don’t worry!).
+<button>Click Here For More Info.</button>
+</p>
+            </div>
                 <div>
                 <h2>Vancouver</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Vancouver is one amazing city to visit! It’s one of those incredible places in Canada that has a buzzing city life but is also so close to the dramatic natural spots on the west coast. This is exactly why I wanted to share our itinerary and guide to visiting Vancouver for a week. 
+You see, the thing is, British Columbia is a huge and stunning province to explore, but you’ll likely need to plan well if you want to venture from Vancouver on a few day trips whilst on holiday. 
+That being said, it’s certainly possible to get a great taste of Vancouver and a little time away from the city during a one week trip.<br><button>Click Here For More Info.</button></br></p>
             </div>
-             <div>
+                <div>
                 <h2>Amsterdam</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Amsterdam is the capital of the Netherlands, and one of the most popular tourist destinations in all of Europe. The city is well-known for its past, the elaborate canal system and the architecture of their iconic, narrow houses. Amsterdam offers way more than just cheap thrills! You can wander the sidewalks (by foot, or more popularly, by bike) and explore the Old Centre, Red Light, Dam Square, Grachtengordel and Museum districts. Use my travel tips from this ultimate Amsterdam travel guide to plan your trip to the Netherlands!<br><button>Click Here For More Info.</button></br></p>
                 </div>
                  <div>
                 <h2>California</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
+                <p>California is one of the most popular travel destinations in the United States, and anyone who is lucky enough to visit will easily understand why. Taste world class wines among the rolling vineyards of Napa and Sonoma, explore the bustling cities of Los Angeles and San Francisco, take an epic road trip down Highway One, or spend a week backpacking through majestic mountain ranges and national parks. It's all waiting for you here in California!.<br><button>Click Here For More Info.</button></br></p>
+                 </div>
                  <div>
                 <h2>New York</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
+                <p>From the Empire State Building to the SoHo to The Statue of Liberty to endless brunch spots. New York is a city that truly has it all. If you’ve never been to the Big Apple before, trying to figure out what to do, especially in a short period of time, can be overwhelming to say the least.<br><button>Click Here For More Info.</button></br></p>
+          </div>
             </div>
             </div>
             <ul class='sci'>
-                <li><a href='#'><img src='Milestone-2/images/facebook.png'></a></li>
-                <li><a href='#'><img src='Milestone-2/images/instagram.png'></a></li>
-                <li><a href='#'><img src='Milestone-2/images/youtube.png'></a></li>
+                <li><a href='https://www.facebook.com/' target='_blank'><img src='milestone/images/facebook.jpg' alt='Facebook'></a></li>
+                <li><a href='https://www.instagram.com/' target='_blank'><img src='milestone/images/instagram.jpg' alt='Instagram'></a></li>
+                <li><a href='https://eoinburke.github.io/milestone-project/' target='_blank'><img src='milestone/images/website.jpg' alt='Youtube'></a></li>
             </ul>
 
             <ul class='controls'>
-                <li><img src='Milestone-2/images/left.png'></li>
-                 <li><img src='Milestone-2/images/right.png'></li>
+                <li onclick='prevSlide();prevSlideText();'><img src='milestone/images/left.jpg' alt='left arrow'></li>
+                 <li onclick='nextSlide();nextSlideText();'><img src='milestone/images/right.jpg' alt='right arrow'></li>
             </ul>
-            </div>
+    </div>
 </section>
-    </head>
+
+<script>
+    const slideShow = document.getElementById('slideShow');
+    const slides = slideShow.getElementsByTagName('video');
+    var index = 0;
+
+    function nextSlide() {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }
+     function prevSlide() {
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+     const slideShowText = document.getElementById('slideShowText');
+    const slidesText = slideShowText.getElementsByTagName('div');
+    var i = 0;
+
+    function nextSlideText() {
+        slidesText[i].classList.remove('active');
+        i = (i + 1) % slidesText.length;
+        slidesText[i].classList.add('active');
+    }
+     function prevSlideText() {
+        slidesText[i].classList.remove('active');
+        i = (i - 1 + slidesText.length) % slidesText.length;
+        slidesText[i].classList.add('active');
+    }
+    function toggleMenu() {
+        const menu = document.querySelector('.menuIcon');
+        const navbar = document.getElementById('navbar');
+        menuIcon.classList.toggle('active');
+        navbar.classList.toggle('active');
+    }
+</script>
+</body>
 </html>
+
+	
+	
