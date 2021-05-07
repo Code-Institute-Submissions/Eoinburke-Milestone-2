@@ -4,7 +4,13 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width initial-scale=1.0'>
         <title>Travel Website</title>
-        <link href="stylesheet.css" rel="stylesheet">
+        <style>
+            #map {
+                height:400px;
+                width:100%;
+            }
+        </style>
+        <link href="stylesheet1.css" rel="stylesheet">
        </head>
     <body>
 <section>
@@ -19,6 +25,25 @@
             </ul>
         </header>
       </div>
+
+<h1>My Google Map</h1>
+
+<div id="map">
+
+</div>
+<script>
+function initMap() {
+var options = {
+    zoom:8,
+    center:{lat:53.1424°,lng:-7.6921° W}
+}
+
+ var map = new google.maps.Map(document.getElementById(map),options);
+}
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-u4NkFdgdHRiWGagAMU7w0PoO46XHSJY&callback=initMap">
+</script>
 </section>
     </body>
 </html>
