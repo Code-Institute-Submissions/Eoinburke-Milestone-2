@@ -4,18 +4,18 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width initial-scale=1.0'>
         <title>Travel Website</title>
-        <link href="style.css" rel="stylesheet">
-        <script src='app.js'></script>
+        <link href="milestone/assets/css/style.css" rel="stylesheet">
+        <link href="milestone/assets/css/navbar.css" rel="stylesheet">
         
        </head>
     <body>
 <section>
     <div class='bannerVideo' id='slideShow'>
-        <video src='milestone/video/video1.mp4' autoplay muted loop class='active'></video>
-         <video src='milestone/video/video2.mp4' autoplay muted loop></video>
-          <video src='milestone/video/video3.mp4' autoplay muted loop></video>
-           <video src='milestone/video/video4.mp4' autoplay muted loop></video>
-            <video src='milestone/video/video5.mp4' autoplay muted loop></video>
+        <video src='milestone/assets/video/video1.mp4' autoplay muted loop class='active'></video>
+         <video src='milestone/assets/video/video2.mp4' autoplay muted loop></video>
+          <video src='milestone/assets/video/video3.mp4' autoplay muted loop></video>
+           <video src='milestone/assets/video/video4.mp4' autoplay muted loop></video>
+            <video src='milestone/assets/video/video5.mp4' autoplay muted loop></video>
     </div>
     <div class='container'>
         <header id='navbar'>
@@ -67,14 +67,14 @@ That being said, it’s certainly possible to get a great taste of Vancouver and
             </div>
             </div>
             <ul class='sci'>
-                <li><a href='https://www.facebook.com/' target='_blank'><img src='milestone/images/facebook.jpg' alt='Facebook'></a></li>
-                <li><a href='https://www.instagram.com/' target='_blank'><img src='milestone/images/instagram.jpg' alt='Instagram'></a></li>
-                <li><a href='https://eoinburke.github.io/milestone-project/' target='_blank'><img src='milestone/images/website.jpg' alt='Youtube'></a></li>
+                <li><a href='https://www.facebook.com/' target='_blank'><img src='milestone/assets/images/facebook.jpg' alt='Facebook'></a></li>
+                <li><a href='https://www.instagram.com/' target='_blank'><img src='milestone/assets/images/instagram.jpg' alt='Instagram'></a></li>
+                <li><a href='https://eoinburke.github.io/milestone-project/' target='_blank'><img src='milestone/assets/images/website.jpg' alt='Youtube'></a></li>
             </ul>
 
             <ul class='controls'>
-                <li onclick='prevSlide();prevSlideText();'><img src='milestone/images/left.jpg' alt='left arrow'></li>
-                 <li onclick='nextSlide();nextSlideText();'><img src='milestone/images/right.jpg' alt='right arrow'></li>
+                <li onclick='prevSlide()'><img src='milestone/assets/images/left.jpg' alt='left arrow'></li>
+                 <li onclick='nextSlide()'><img src='milestone/assets/images/right.jpg' alt='right arrow'></li>
             </ul>
     </div>
 </section>
@@ -83,32 +83,29 @@ That being said, it’s certainly possible to get a great taste of Vancouver and
     const slideShow = document.getElementById('slideShow');
     const slides = slideShow.getElementsByTagName('video');
     var index = 0;
+     const slideShowText = document.getElementById('slideShowText');
+    const slidesText = slideShowText.getElementsByTagName('div');
+    var i = 0;
 
     function nextSlide() {
         slides[index].classList.remove('active');
         index = (index + 1) % slides.length;
         slides[index].classList.add('active');
+         slidesText[i].classList.remove('active');
+        i = (i + 1) % slidesText.length;
+        slidesText[i].classList.add('active');
     }
      function prevSlide() {
         slides[index].classList.remove('active');
         index = (index - 1 + slides.length) % slides.length;
         slides[index].classList.add('active');
-    }
-
-     const slideShowText = document.getElementById('slideShowText');
-    const slidesText = slideShowText.getElementsByTagName('div');
-    var i = 0;
-
-    function nextSlideText() {
-        slidesText[i].classList.remove('active');
-        i = (i + 1) % slidesText.length;
-        slidesText[i].classList.add('active');
-    }
-     function prevSlideText() {
-        slidesText[i].classList.remove('active');
+          slidesText[i].classList.remove('active');
         i = (i - 1 + slidesText.length) % slidesText.length;
         slidesText[i].classList.add('active');
     }
+
+
+
     function toggleMenu() {
         const menu = document.querySelector('.menuIcon');
         const navbar = document.getElementById('navbar');
