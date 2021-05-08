@@ -34,7 +34,7 @@ let map;
 function initMap() {
   const myLatLng = { lat: 53.1424, lng: -7.6921 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 3,
     center: myLatLng,
   });
   new google.maps.Marker({
@@ -42,6 +42,19 @@ function initMap() {
     map,
     title: "Hello World!",
   });
+
+  addMarker({lat:49.2827, lng:-123.1207});
+  addMarker({lat:52.3676, lng:-4.9041});
+  addMarker({lat:36.7783, lng:-119.4179});
+   addMarker({lat:40.7128, lng:-74.0060});
+
+
+  function addMarker(coords){
+      var marker = new google.maps.Marker({
+          position:coords,
+          map:map,
+      });
+  }
 }
 
 
