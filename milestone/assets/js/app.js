@@ -1,13 +1,10 @@
-window.onload = function (){ 
-    let apiUrl = proccess.env.API_URL;
-    
+var xhr = new XMLHttpRequest();
 
-    $.getJSON(apiUrl, function(data){
-        let term = data.term;
+xhr.open('GET', 'https://rapidapi.com/');
+xhr.send();
 
-        let latitude = data.suggestions [0].entities[0].latitude;
-         $('.lat').html("latiude: " + latitude);
-
-        $('.term').html("Term: " + term);
-    });
-}
+xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById('data').innerHTML = this.responseText;
+    }
+};
