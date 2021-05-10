@@ -1,7 +1,12 @@
 # Travel
+This is my interactive Travel website. Utilizing [Google Maps API](https://developers.google.com/maps), [Rapid API](https://rapidapi.com/marketplace), JavaScript, Jquery. The website helps the user by giving reviews and expierences in diffrent countries.
 
 ## Project Goals
 My aim for the project is to incorpirate various API's so the user can access multiple information at once ranging from flights, accomadation and maps.
+
+## External User Goals
+* To find new holiday destinations, find accomadation and tourist destinations.
+* Be able to plan ahead and plan travel routes.
 
 # Features 
  When the user loads the web page they are met with a location title and a brief discription about that place.
@@ -11,6 +16,8 @@ My aim for the project is to incorpirate various API's so the user can access mu
  ## Nav-bar
  * The nav-bar has clickable link that will bring the user to a new page.
  * When hovering over a nav-bar link the background color changes to a solid white and the cursor changes to a pointer.
+
+
 
 ## Acknowledgements
 * For my homepage I got the code from [Online Tutorials](https://www.youtube.com/watch?v=O2GOkNZ8sjw&t=682s).
