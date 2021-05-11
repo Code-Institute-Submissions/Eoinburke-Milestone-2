@@ -22,7 +22,7 @@
         </header>
       </div>
       <section>
-      <h1>My Google Map</h1>
+        <h1>My Google Map</h1>
 <div id="map">
 
 </div>
@@ -31,7 +31,7 @@ let map;
 function initMap() {
   const myLatLng = { lat: 53.1424, lng: -7.6921 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
+    zoom: 4,
     center: myLatLng,
   });
   new google.maps.Marker({
@@ -39,26 +39,13 @@ function initMap() {
     map,
     title: "Hello World!",
   });
-
-  addMarker({lat:49.2827, lng:-123.1207});
-  addMarker({lat:52.3676, lng:-4.9041});
-  addMarker({lat:36.7783, lng:-119.4179});
-  addMarker({lat:40.7128, lng:-74.0060});
-
-
-  function addMarker(coords){
-      var marker = new google.maps.Marker({
-          position:coords,
-          map:map,
-      });
-  }
 }
 
 
 
 </script>
 <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm0T--ix9C9bDM5eko9IAc74Y8xHIvtfI&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-u4NkFdgdHRiWGagAMU7w0PoO46XHSJY&callback=initMap">
 </script>
 </section>
     </body>
