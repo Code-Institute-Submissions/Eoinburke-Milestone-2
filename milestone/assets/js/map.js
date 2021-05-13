@@ -1,4 +1,4 @@
-function initMap() {
+/*function initMap() {
     const myLatLng = { lat: 53.1424, lng: -7.6921 };
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 4,
@@ -9,7 +9,22 @@ function initMap() {
         map,
         title: "Hello World!",
     });
+}*/
+
+function initMap() {
+    gMap = new google.maps.Map(document.getElementById("map"), {
+        center: {lat: 21, lng: 78},
+        mapTypeId: google.maps.MapTypeId.HYBRID,
+        zoom: 6,
+        heading: 90,
+        tilt: 0
+    });
+
+
+    document.getElementsByTagName("head")[0].appendChild(fileref)
+
 }
+
 
 // let map;
 
