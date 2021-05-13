@@ -2,7 +2,7 @@
 This is my interactive Travel website. Utilizing [Google Maps API](https://developers.google.com/maps), [Rapid API](https://rapidapi.com/marketplace), JavaScript, Jquery. The website helps the user by giving reviews and expierences in diffrent countries.
 
 ## Project Goals
-My aim for the project is to incorpirate various API's so the user can access multiple information at once ranging from flights, accomadation and maps.
+My aim for the project is to incorpirate various API"s so the user can access multiple information at once ranging from flights, accomadation and maps.
 
 ## External User Goals
 * To find new holiday destinations, find accomadation and tourist destinations.
