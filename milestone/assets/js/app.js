@@ -1,23 +1,4 @@
-const baseURL = "https://hotels4.p.rapidapi.com/get-meta-data/?rapidapi-key=a31d4df07bmsh96320001ced0244p1169dfjsnd0bf8d0a37ef";
 
-function getData(type, cb) {
-    // Create a request variable and assign a new XMLHttpRequest object to it.
-    var xhr = new XMLHttpRequest();
-
-    xhr.open("GET", baseURL + type + "/");
-    xhr.send();
-
-    xhr.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            cb(JSON.parse(this.responseText));
-        }
-    };
-}
-
-/**
- * 
- * @param {Function} callback is a function that has as parameter the resulting response one 
- */
 function getData(callback) {
     const settings = {
         "async": true,
@@ -32,6 +13,7 @@ function getData(callback) {
 
     $.ajax(settings).done(callback).fail((jqXHR, textStatus) => {
         console.log(jqXHR.responseJson);
+   
     });
 }
 
@@ -42,8 +24,13 @@ function writeToDocument(type) {
 }
 
 function start() {
+    let content = '';
     getData((response) => {
         console.log(response);
+        response.forEach(location => {
+        content += `<div>${location.name}${location.posName}`
+        })  
+         document.getElementById('data').innerHTML = content;
     });
 }
 
