@@ -15,3 +15,33 @@ min-height: 100vh;
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
    }
+
+   .menuIcon {
+    display: none;
+}
+
+@media (max-width:991px) {
+   
+   .menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: initial;
+    z-index: 10000;
+    background: #fff url(/milestone/assets/images/menu.jpg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.menuIcon.active {
+    background: #fff url(/milestone/assets/images/close.jpg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+}

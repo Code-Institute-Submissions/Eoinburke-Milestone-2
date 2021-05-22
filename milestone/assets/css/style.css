@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,23 +11,7 @@
     font-size: 200px;
     font-family: "Mukta", sans-serif;
 }
- button {
-  background-color: #F5FFFA;
-  border: none;
-  color: black;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 13px;
-  margin: 1px 1px;
-  cursor: pointer;
-}
 
-section {
-background: #111;
-min-height: 100vh;
-}
 
 section .bannerVideo {
     position: absolute;
@@ -51,9 +35,52 @@ section .bannerVideo video.active {
     opacity: 1;
 }
 
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
 .container {
     position: relative;
-    padding: 0;
+   
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -71,11 +98,7 @@ section .bannerVideo video.active {
     box-shadow: 10px 0 15px rgba(0,0,0,0.05);
 }
 
-.container .content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 
 .container .content .bannerText {
     position: relative;
@@ -156,26 +179,41 @@ cursor: pointer;
     background: #f5f5f5;
 }
 
-.menuIcon {
-    display: none;
-}
-
-@media (max-width:991px) {
-    .container {
-        padding: 20px;
+@media (max-width:800px) {
+   
+    nav .mainMenu {
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
     }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
 
-    .container::before {
-        width: 100%;
     }
-
-    .container header {
-        padding: 10px 20px;
+    nav .openMenu {
+        display: block;
     }
-
-    .container .content .bannerText div h2 {
-        font-size: 3em;
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
     }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+   
 
     .container .content .bannerText {
         text-align: center;
@@ -183,65 +221,19 @@ cursor: pointer;
 
     .container header ul {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        color: #fff;
-        z-index: 1000;
-        display: none;
+      
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+    
     }
 
-    .container header.active ul {
-        display: flex;
-    }
+   
 
     .container header ul li {
         text-align: center;
         margin: 10px;
     }
-
-.container header ul li a {
-    color: #333;
-    font-size: 1.5em;
-}   
-
-
-.container header ul li a:hover {
-    color: #f00;
-}
-
-.menuIcon {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    display: initial;
-    z-index: 10000;
-    background: #fff url(menu.jpg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.menuIcon.active {
-    background: #fff url(close.jpg);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.sci li a {
-    width: 50px;
-    height: 50px;
-}
-
+    
 .controls li {
     width: 60px;
     height: 60px;
