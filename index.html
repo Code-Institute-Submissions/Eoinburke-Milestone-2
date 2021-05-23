@@ -75,12 +75,41 @@ That being said, it’s certainly possible to get a great taste of Vancouver and
           </div>
             </div>
             </div>
+              <ul class='sci'></ul>
+             <a href='https://www.facebook.com/' target='_blank'><i class="fab fa-facebook"></a></i>
+                <a href='https://www.instagram.com/' target='_blank'><i class="fab fa-instagram"></a></i>
+                <a href='https://eoinburke.github.io/milestone-project/' target='_blank'><i class="fab fa-github"></a></i>
+            </ul>
             <ul class="controls">
                 <li onclick="prevSlide()"><img src="milestone/assets/images/left.jpg" alt="left arrow"></li>
                  <li onclick="nextSlide()"><img src="milestone/assets/images/right.jpg" alt="right arrow"></li>
             </ul>
     </div>
-    
+    <script>
+         const slideShow = document.getElementById("slideShow");
+    const slides = slideShow.getElementsByTagName("video");
+    var index = 0;
+     const slideShowText = document.getElementById("slideShowText");
+    const slidesText = slideShowText.getElementsByTagName("div");
+    var i = 0;
+
+    function nextSlide() {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+         slidesText[i].classList.remove("active");
+        i = (i + 1) % slidesText.length;
+        slidesText[i].classList.add("active");
+    }
+     function prevSlide() {
+        slides[index].classList.remove("active");
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add("active");
+          slidesText[i].classList.remove("active");
+        i = (i - 1 + slidesText.length) % slidesText.length;
+        slidesText[i].classList.add("active");
+    }
+    </script>
 </section>
 <link href="milestone/assets/js/app1.js">
 </body>
