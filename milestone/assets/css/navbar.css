@@ -9,6 +9,11 @@
     padding: 30px 100px;
 }
 
+#btnsDiv {
+    position: absolute;
+    top: 10%;
+}
+
 .container header .logo {
     font-weight: 700;
     text-transform: uppercase;
