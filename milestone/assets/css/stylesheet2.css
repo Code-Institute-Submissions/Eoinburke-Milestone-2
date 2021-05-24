@@ -1,17 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
-
-* {
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-section {
-background: black;
-min-height: 100vh;
-}
 
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
 
@@ -28,6 +14,39 @@ body {
 section {
 min-height: 100vh;
 }
+
+section .bannerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .bannerVideo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+section .bannerVideo video.active {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
 
 p,h1,h2,h3 {
     color: white;

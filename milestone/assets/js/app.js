@@ -160,7 +160,7 @@ function getHotels() {
 };
 
 function getHotelsData(callback) {
-    var urlString = "https://hotels4.p.rapidapi.com/properties/list?adults1=1&pageNumber=1&destinationId=" + destinationId + "&pageSize=25&checkOut=2020-01-15&checkIn=2020-01-08&sortOrder=PRICE&locale=en_US&currency=EUR";
+    var urlString = "https://hotels4.p.rapidapi.com/properties/list?adults1=1&pageNumber=1&destinationId=" + destinationId + "&pageSize=4&checkOut=2020-01-15&checkIn=2020-01-08&sortOrder=PRICE&locale=en_US&currency=EUR";
     const settings = {
         "async": true,
         "crossDomain": true,
