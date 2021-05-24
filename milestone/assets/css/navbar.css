@@ -26,10 +26,10 @@
     position: relative;
     display: flex;
 }
-
 .container header ul li {
     list-style: none;
-    margin: 0 20px;
+    margin: 15px 20px;
+    padding: 5px;
 }
 
 .container header ul li a {
