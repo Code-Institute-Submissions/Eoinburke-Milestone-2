@@ -1,38 +1,52 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>Travel Website</title>
-     <link href="milestone/assets/css/navbar.css" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Travel Website</title>
+    <link href="milestone/assets/css/navbar.css" rel="stylesheet">
     <link href="milestone/assets/css/stylesheet2.css" rel="stylesheet">
-       
-       
-    </head>
-    <body>
-        <section>
-         <div class="bannerVideo" id="slideShow">
-        <video src="milestone/assets/video/travel.mp4" autoplay muted loop class="active"></video>
-         </div>
-            <div class="container">
-                <header id="navbar">
-                    <a href="#" class="logo"></a>
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="travel.html">Travel</a></li>
-                        <li><a href="book.html">Book</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </header>
-         </div>
-            <div id="searchDiv">
-                <input id="search" name="submit" type="text" value="Search Hotels" placeholder="Search Hotel">
-                <input name="submit" type="submit" onclick="searchLocations()">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <section>
+        
+        <div class="container black">
+            <header id="navbar">
+                <a href="#" class="logo"></a>
+                <ul>
+                    
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="book.html">Book</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <div id="content" class="container">
+            <h1 id="bookTitle">Search Hotels</h1>
+        </div>
+
+        <form id="searchForm" class="search-bar">
+            <input id="search" type="search" name="search" pattern=".*\S.*" required>
+            <button id="search-btn" class="search-btn" type="submit">
+                <span>Search</span>
+            </button>
+        </form>
+        
+        <div class="container">
+            <div id="loader" class="loader"></div>
             <div id="data"></div>
-              
-            </div>
-        </section>
-        <script src="milestone/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="milestone/assets/js/app.js"></script>
-    </body>
+        </div>
+
+    </section>
+    <script src="milestone/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="milestone/assets/js/app.js"></script>
+</body>
+
 </html>

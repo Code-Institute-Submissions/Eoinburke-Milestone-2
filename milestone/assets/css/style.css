@@ -35,9 +35,21 @@ section .bannerVideo video.active {
     opacity: 1;
 }
 
+
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
 .container {
     position: relative;
-    padding: 0;
+   
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -56,9 +68,11 @@ section .bannerVideo video.active {
 }
 
 
+
 .container .content .bannerText {
     position: relative;
     max-width: 700px;
+    background-color: rgba(150, 150, 150, 0.1);
 }
 
 .container .content .bannerText div {
@@ -136,6 +150,41 @@ cursor: pointer;
 }
 
 @media (max-width:800px) {
+   
+    nav .mainMenu {
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+   
+
     .container .content .bannerText {
         text-align: center;
     }
@@ -148,6 +197,8 @@ cursor: pointer;
     
     }
 
+   
+
     .container header ul li {
         text-align: center;
         margin: 10px;
@@ -158,3 +209,6 @@ cursor: pointer;
     height: 60px;
 }
 }
+
+
+

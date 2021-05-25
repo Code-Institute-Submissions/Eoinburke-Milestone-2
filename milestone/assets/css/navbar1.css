@@ -25,6 +25,8 @@
 .container header ul {
     position: relative;
     display: flex;
+    padding-left: 630px;
+    margin-bottom: 65px;
 }
 
 .container header ul li {
