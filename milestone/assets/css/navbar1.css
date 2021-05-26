@@ -9,11 +9,6 @@
     padding: 30px 100px;
 }
 
-#btnsDiv {
-    position: absolute;
-    top: 10%;
-}
-
 .container header .logo {
     font-weight: 700;
     text-transform: uppercase;
@@ -23,10 +18,10 @@
 }
 
 .container header ul {
-    position: relative;
+    position: absolute;
     display: flex;
-    padding-left: 630px;
-    margin-bottom: 65px;
+    padding-left: 635px;
+    margin-bottom: 75px;
 }
 
 .container header ul li {
