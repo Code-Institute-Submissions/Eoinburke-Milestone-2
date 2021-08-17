@@ -39,4 +39,5 @@ function close(){
         i = (i - 1 + slidesText.length) % slidesText.length;
         slidesText[i].classList.add("active");
     }
+
      

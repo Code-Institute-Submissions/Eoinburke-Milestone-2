@@ -7,11 +7,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 .p {
     font-size: 200px;
     font-family: "Mukta", sans-serif;
 }
 
+.bannerText div p {
+    padding-right: 400px;
+}
 
 section .bannerVideo {
     position: absolute;
@@ -41,21 +45,6 @@ section .bannerVideo video.active {
 .fa-instagram:hover {color: rgb(255, 0, 191);}
 .fa-github:hover {color: rgb(255, 123, 0);}
 
-
-nav .logo {
-    margin: 6px;
-    font-size: 25px;
-    cursor: pointer;
-}
-.container {
-    position: relative;
-   
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .container::before {
     content: "";
     position: absolute;
@@ -66,8 +55,6 @@ nav .logo {
     backdrop-filter: blur(10px);
     box-shadow: 10px 0 15px rgba(0,0,0,0.05);
 }
-
-
 
 .container .content .bannerText {
     position: relative;
@@ -94,7 +81,7 @@ nav .logo {
 .container .content .bannerText div p {
     color: #fff;
     font-size: 18px;
-    margin: 20px 0;
+    padding-left: 500px;
     font-family: "Poppins", sans-serif;
 }
 
