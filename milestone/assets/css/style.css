@@ -81,7 +81,7 @@ section .bannerVideo video.active {
 .container .content .bannerText div p {
     color: #fff;
     font-size: 18px;
-    padding-left: 500px;
+    padding-right: 200px;
     font-family: "Poppins", sans-serif;
 }
 
