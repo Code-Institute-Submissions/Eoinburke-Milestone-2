@@ -36,6 +36,10 @@ nav ul a {
     font-size: 2em;
 }
 
+nav .nav-wrapper {
+background: black;
+}
+
 .container header ul {
     position: relative;
     display: flex;
