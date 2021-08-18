@@ -35,6 +35,14 @@ section .bannerVideo video {
     opacity: 0;
 }
 
+nav ul a {
+font-size: 2em;
+    display: flex;
+    margin-left: 50px;
+    
+
+}
+
 section .bannerVideo video.active {
     opacity: 1;
 }
@@ -152,34 +160,6 @@ cursor: pointer;
 
 @media (max-width:800px) {
    
-    nav .mainMenu {
-        height: 100%;
-        position: relative;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-    }
-    nav .openMenu {
-        display: block;
-    }
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-        font-size: 1.6rem;
-    }
     .icons i {
         display: inline-block;
         padding: 12px;
@@ -197,8 +177,6 @@ cursor: pointer;
         justify-content: center;
     
     }
-
-   
 
     .container header ul li {
         text-align: center;

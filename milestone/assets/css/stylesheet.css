@@ -32,6 +32,10 @@ min-height: 100vh;
     padding: 20px 80px;
 }
 
+nav ul a {
+    font-size: 2em;
+}
+
 .container header ul {
     position: relative;
     display: flex;
@@ -201,4 +205,5 @@ textarea{
 
 .container header ul li a:hover {
     color: #f00;
+}
 }
