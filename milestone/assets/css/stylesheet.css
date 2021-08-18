@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -12,73 +12,7 @@ background: black;
 min-height: 100vh;
 }
 
-.container header {
-    font-family: "Poppins", sans-serif;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container header .logo {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.5em;
-    text-decoration: none;
-    padding: 20px 80px;
-}
-
-nav ul a {
-    font-size: 2em;
-}
-
-nav .nav-wrapper {
-background: black;
-}
-
-.container header ul {
-    position: relative;
-    display: flex;
-}
-
-.container header ul li {
-    list-style: none;
-    margin: 15px 20px;
-    padding: 5px;
-}
-
-.container header ul li a {
-    position: relative;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 4px 10px;
-    color: #fff;
-}
-
-.container header ul li a:hover, 
-.container header ul li a:active {
-    background: #fff;
-    color: #111;
-}
-
-
-.container:after{
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: url("img/bg.jpg") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
-.contact-box{
+.contact-box {
 	max-width: 850px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -93,17 +27,13 @@ background: black;
 	background: url("img/bg.jpg") no-repeat center;
 	background-size: cover;
 	height: 100%;
-}
-
-.right{
-	padding: 25px 40px;
-}
+} 
 
 h2{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
-}
+} */
 
 h2:after{
 	content: "";
@@ -114,7 +44,7 @@ h2:after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: white;
 }
 
 .field{
@@ -166,48 +96,4 @@ textarea{
 	.left{
 		height: 200px;
 	}
-    .container {
-        padding: 20px;
-    }
-
-    .container::before {
-        width: 100%;
-    }
-
-    .container header {
-        padding: 10px 20px;
-    }
-
-    .container header ul {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        color: #fff;
-        z-index: 1000;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .container header.active ul {
-        display: flex;
-    }
-
-    .container header ul li {
-        text-align: center;
-        margin: 10px;
-    }
-
-.container header ul li a {
-    color: #333;
-    font-size: 1.5em;
-}   
-
-
-.container header ul li a:hover {
-    color: #f00;
-}
 }

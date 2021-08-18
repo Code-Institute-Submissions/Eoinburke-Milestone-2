@@ -1,7 +1,5 @@
 nav ul a {
-font-size: 2em;
-    display: flex;
-    margin-left: 50px;
+font-size: 1em;
 }
 
 nav .nav-wrapper { 

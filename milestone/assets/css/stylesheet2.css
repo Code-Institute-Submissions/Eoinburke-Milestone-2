@@ -33,12 +33,6 @@ p.black {
     color: black;
 }
 
-
-
-nav ul a {
-    font-size: 2em;
-}
-
 h2, h3  {
     color: black;
     padding: 8px 8px 15px;
@@ -103,7 +97,7 @@ section {
 }
 
 
-/*searchbar animation*/
+searchbar animation
 :root {
 	font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
 }
