@@ -19,6 +19,7 @@ overflow-x: hidden;
 .p {
     font-size: 200px;
     font-family: "Mukta", sans-serif;
+    /* text-shadow: white 0px 0px 10px; */
 }
 
 .bannerText div p {
