@@ -48,11 +48,6 @@ section .bannerVideo video.active {
     opacity: 1;
 }
 
-.fa-facebook:hover {color: rgb(0, 110, 255);}
-.fa-twitter:hover {color: rgb(86, 154, 243);}
-.fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
-
 .container::before {
     content: "";
     position: absolute;
@@ -87,9 +82,10 @@ section .bannerVideo video.active {
 }
 
 .container .content .bannerText div p {
-    color: #fff;
+    color: aliceblue;
     font-size: 25px;
     padding-right: 200px;
+    font-weight: bolder;
     font-family: "Poppins", sans-serif;
 }
 
@@ -133,11 +129,12 @@ color: #C13584;
 color: #171515;
 font-size: 1.5em;
 }
+
 .fa, .fas {
     max-height: 50%;
     color: white;
-    font-size: 3em;
-
+    font-size: 4em;
+    padding-right: 50px;
 }
 
 .fa-chevron-circle-left {
@@ -169,16 +166,14 @@ align-items: center;
 cursor: pointer;
 }
 
-@media (max-width:1200px) {
+/* @media (max-width:1200px) {
      .fa, .fas {
     height: 50vw;
     color: white;
     font-size: 3em;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
 }
+
+
 .fa-chevron-circle-left {
 width: 180vw;
 }
@@ -206,17 +201,21 @@ width: 175vw;
 .fa-chevron-circle-right {
 padding-left: 30px;
 }
-}
+} */
  
 
 @media (max-width:990px) {
 .sci li a {
 display: none;
 }
-}
 
-.fa-chevron-circle-right {
-padding-left: 30px;
+.container .content .bannerText div p { 
+        padding-right: 6px;
+}
+    .fa, .fas {
+    color: white;
+    font-size: 2em;
+   
 }
 }
 
@@ -256,6 +255,57 @@ padding-right: 155px;
 }
 }
 
+@media (max-width:735px) {
+
+     .fa, .fas {
+    font-size: 1.5em;
+}
+
+.fa-chevron-circle-left {
+padding-right: 1080px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 60px;
+}
+}
+
+@media (max-width:673px) {
+
+     .fa, .fas {
+    font-size: 1.5em;
+}
+
+.fa-chevron-circle-left {
+padding-right: 1000px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 60px;
+}
+}
+
+@media (max-width:622px) {
+
+     .fa, .fas {
+    font-size: 1.5em;
+}
+
+.fa-chevron-circle-left {
+padding-right: 900px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 60px;
+}
+}
+
 @media (max-width:500px) {
 p {
     font-size: small;
@@ -271,36 +321,6 @@ p {
 .container .content .bannerText div h2 {
     padding-left: 25px;
 }
-
-.fa, .fas {
-    max-height: 50%;
-    color: white;
-    font-size: 3em;
-    position: fixed;
 }
 
-.fa-chevron-circle-left {
-padding-right: 480px;
-}
-
-.fa-chevron-circle-right {
-padding-left: 60px;
-}
-}
-
-@media (max-width:350px) {
-   .fa, .fas {
-    height: 170vw;
-    color: white;
-    font-size: 2em;
-}
-
-.fa-chevron-circle-left {
-width: 100vw;
-}
-
-.fa-chevron-circle-right {
-padding-left: 40px;
-}
-}
 
