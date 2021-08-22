@@ -88,7 +88,7 @@ section .bannerVideo video.active {
 
 .container .content .bannerText div p {
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     padding-right: 200px;
     font-family: "Poppins", sans-serif;
 }
@@ -133,6 +133,20 @@ color: #C13584;
 color: #171515;
 font-size: 1.5em;
 }
+.fa, .fas {
+    max-height: 50%;
+    color: white;
+    font-size: 3em;
+
+}
+
+.fa-chevron-circle-left {
+width: 180vw;
+}
+
+.fa-chevron-circle-right {
+padding-left: 30px;
+}
 
 .sci li a img {
     display: inline-block;
@@ -155,22 +169,56 @@ align-items: center;
 cursor: pointer;
 }
 
- 
+@media (max-width:1200px) {
+     .fa, .fas {
+    height: 50vw;
+    color: white;
+    font-size: 3em;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+.fa-chevron-circle-left {
+width: 180vw;
+}
 
+.fa-chevron-circle-right {
+padding-left: 30px;
+}
+}
+
+@media (max-width:1000px) {
+    .fa, .fas {
+    height: 70vw;
+    color: white;
+    font-size: 3em;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+.fa-chevron-circle-left {
+width: 175vw;
+
+}
+
+.fa-chevron-circle-right {
+padding-left: 30px;
+}
+}
+ 
 
 @media (max-width:990px) {
 .sci li a {
 display: none;
 }
-
-
 }
 
-/* @media (max-width:400px) {
-.sci li a {
-display: none;
+.fa-chevron-circle-right {
+padding-left: 30px;
 }
-} */
+}
 
 @media (max-width:800px) {
    
@@ -202,6 +250,12 @@ display: none;
 }
 }
 
+@media (max-width:768px) {
+h2 {
+padding-right: 155px;
+}
+}
+
 @media (max-width:500px) {
 p {
     font-size: small;
@@ -209,8 +263,44 @@ p {
 }
 }
 
-@media (max-width:768px) {
-h2 {
-padding-right: 155px;
+@media (max-width:375px) {
+.container .content .bannerText div p {
+    font-size: 19px;
+}
+
+.container .content .bannerText div h2 {
+    padding-left: 25px;
+}
+
+.fa, .fas {
+    max-height: 50%;
+    color: white;
+    font-size: 3em;
+    position: fixed;
+}
+
+.fa-chevron-circle-left {
+padding-right: 480px;
+}
+
+.fa-chevron-circle-right {
+padding-left: 60px;
 }
 }
+
+@media (max-width:350px) {
+   .fa, .fas {
+    height: 170vw;
+    color: white;
+    font-size: 2em;
+}
+
+.fa-chevron-circle-left {
+width: 100vw;
+}
+
+.fa-chevron-circle-right {
+padding-left: 40px;
+}
+}
+
