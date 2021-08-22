@@ -1,5 +1,5 @@
 # Travel
-<img src="milestone/assets/images/homepage.jpg">
+<img src="milestone/assets/images/responsive.jpg">
 
 This is my interactive Travel website. Utilizing [Google Maps API](https://developers.google.com/maps), [Rapid API](https://rapidapi.com/marketplace), JavaScript, Jquery. The website helps the user by giving reviews and expierences in diffrent countries.
 
