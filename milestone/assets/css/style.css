@@ -261,6 +261,10 @@ padding-right: 155px;
     font-size: 1.5em;
 }
 
+.container .content .bannerText div h2 {
+    padding-right: 20px;
+}
+
 .fa-chevron-circle-left {
 padding-right: 1080px;
  position: fixed;
@@ -306,12 +310,60 @@ padding-left: 60px;
 }
 }
 
+@media (max-width:622px) {
+
+     .fa, .fas {
+    font-size: 1.5em;
+}
+
+.fa-chevron-circle-left {
+padding-right: 840px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 50px;
+}
+}
+
+@media (max-width:622px) {
+
+     .fa, .fas {
+    font-size: 1.5em;
+}
+
+.fa-chevron-circle-left {
+padding-right: 800px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 50px;
+}
+}
+
 @media (max-width:500px) {
 p {
     font-size: small;
     display: inline;
 }
+     .fa, .fas {
+    font-size: 1.5em;
 }
+
+.fa-chevron-circle-left {
+padding-right: 700px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 60px;
+}
+}
+
 
 @media (max-width:375px) {
 .container .content .bannerText div p {
@@ -321,6 +373,20 @@ p {
 .container .content .bannerText div h2 {
     padding-left: 25px;
 }
+     .fa, .fas {
+    font-size: 1.5em;
 }
+
+.fa-chevron-circle-left {
+padding-right: 600px;
+ position: fixed;
+  
+}
+
+.fa-chevron-circle-right {
+padding-left: 60px;
+}
+}
+
 
 
