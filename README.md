@@ -8,26 +8,45 @@ My aim for the project is to incorpirate various API"s so the user can access mu
 
 ## External User Goals
 * To find new holiday destinations, find accomadation and tourist destinations.
+
 * Be able to plan ahead and plan travel routes.
 
-# Wireframe Mockups
-## Scope
-Within the scope of the project I have an interactive map that displays markers based on latitude and longitude data from the database. I have also implanted API's that will load up hotels in a searched location and photos of the hotel will load as well.
+* This website is my own personal blog of places I have travelled to. I wanted to to add destination for each place I thought were woth while seeing.
 
+
+### Site owner's goal
+To help usesrs choose their next holiday destination.
+
+Make navigating through the website easy and understandable.
+
+## UX
+### Strategy
+Display data from [Rapid-API](https://rapidapi.com/) displaying local hotels in the searched location.
+
+### Scope
+Within the scope of the project I have an interactive map that displays markers based on latitude and longitude data from the database.
+
+I have also added an API for when a user searches a location in the world hotels in the surrounding area will show.
+
+# Wireframe Mockups
 # Structure
-The website has 4 diffrent pages the user can navigate through.
+The website has multiple pages the user can navigate through.
 ## Home
  Gives a brief insite into each location. A short clip plays on loop in the background that will be related to each location.
-[Lucid Chart](https://lucid.app/lucidchart/e0d2c6a0-2ea7-4108-af02-c6386e4252ee/edit?invitationId=inv_6be4a4a5-1e9f-4d45-9fc7-f326bbd1b962)
+ <img src="milestone/assets/images/readme/home.jpg">
+
 ## Travel
 The user is met by a Google maps API. The map will have various pin points indicating each location on the map.
-[Lucid Chart](https://lucid.app/lucidchart/54f013ba-3c5d-43b0-8011-8f504dc02233/edit?invitationId=inv_623ee52b-dcc2-40bd-aa20-db42b8eb3e9e)
+<img src="milestone/assets/images/readme/map.jpg">
+
 ## Book
 The booking page will have a search bar the user can click on and then they will have to type in a location they are wishing to travel to and they will be met by with a list of hotels and photos of those hotels.
-[Lucid Chart](https://lucid.app/lucidchart/8ff67d10-8af2-4643-8a8c-c84fa0325f88/edit?invitationId=inv_b357775e-d34b-4d2e-ba16-23d4f6dc1bcc)
+<img src="milestone/assets/images/readme/hotel.jpg">
+
 ## Contact
  On the contact page there user can contact me with any queries they are having they will be met by multipe input bars asking for their various details.
-[Lucid Chart](https://lucid.app/lucidchart/ac1b1949-3944-4077-8541-29d8065bf1bd/edit?viewport_loc=156%2C131%2C1021%2C628%2C0_0&invitationId=inv_2fc3cb85-b0dd-45de-b511-57c80508d39e)
+<img src="milestone/assets/images/readme/contact.jpg">
+
 # Skeleton
 # Features 
  When the user loads the web page they are met with a location title and a brief discription about that place. They will be able to navigate through the diffrent areas by clicking the arrows on the bottom left of the page.
@@ -54,6 +73,7 @@ This section is for users if they have any more questions they can leave their p
 
 # Features left to implant
 Towards the end I had problems inserting marker labels on my Google Maps API I would have like to have added labels.
+
 # Testing errors
 ## Responsiveness
 The website works as intended in Chrome, Mozilla and Microsoft Edge, on mobile it is not very responsive at all. I found it very difficult to get the hamburger menu working. I was able to get the header and paragraph on the home page responsive to screen size.
