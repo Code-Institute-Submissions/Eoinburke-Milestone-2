@@ -35,6 +35,10 @@ The website has multiple pages the user can navigate through.
  Gives a brief insite into each location. A short clip plays on loop in the background that will be related to each location.
  <img src="milestone/assets/images/readme/home.jpg">
 
+ ## Destination Page
+ When the user is in the home menu they will notice two arrows on the bottom right of the page. When they scroll throught the slides they will be met with a new destination, they will also notice a button at the end of the paragraph that is interactive that will bring them to a new page that will have a discription about the place and notable places that I feel are worth visiting.
+ <img src="milestone/assets/images/readme/travel.jpg"> 
+
 ## Travel
 The user is met by a Google maps API. The map will have various pin points indicating each location on the map.
 <img src="milestone/assets/images/readme/map.jpg">
