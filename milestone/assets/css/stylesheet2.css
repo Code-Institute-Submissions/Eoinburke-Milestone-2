@@ -9,7 +9,7 @@
 }
 
 body {
-    background: black;
+    background: white;
 }
 section {
 min-height: 100vh;
@@ -34,7 +34,7 @@ p,h1,h3 {
 } */
 
 h2, h3  {
-    color: black;
+    color: white;
     padding: 8px 8px 15px;
 }
 
@@ -83,7 +83,7 @@ h2, h3  {
 }
 
 h1 {
-    color: Black;
+    color: white;
 }
 
 #content {
