@@ -9,8 +9,9 @@
 }
 
 body {
-    background: white;
+    background: linear-gradient(110deg, #1e90ff 60%, white 60%);
 }
+
 section {
 min-height: 100vh;
 }
@@ -103,7 +104,8 @@ searchbar animation
 }
 body, button, input {
 	font: 1em Hind, sans-serif;
-	line-height: 1.5em;
+	line-height: 5.5em;
+    color: black;
 }
 body, input {
 	color: #171717;
@@ -120,7 +122,30 @@ body {
 .search-btn:before, 
 .search-btn:after {
 	transition: all 0.25s ease-out;
+    color: black;
 }
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  #image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  #text {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+  }
+
 .search-bar input,
 .search-btn {
 	width: 3em;
