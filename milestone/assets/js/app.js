@@ -31,11 +31,11 @@ function start() {
     getData((response) => {
         console.log(response);
         response.forEach(location => {
-            content += `<div>${location.name}${location.posName}</div>`
+            content += `<div>${location.name}${location.posName}</div>`;
         });
         document.getElementById('data').innerHTML = content;
     });
-};
+}
 
 /**
  * 
@@ -114,7 +114,7 @@ function renderHotelData(data) {
                             <img class="hotelImg" src="${thumbnailString}">
                         </div>
                     </a>`;
-    })
+    });
     content += `</div>`;
     document.getElementById('data').innerHTML = content;
 }
@@ -160,8 +160,8 @@ function getHotelPhotos() {
             console.log("baseurl: " + thumbnailString);
             content += `<div class='picDiv'>
                                 <img class='picImg' src=`+ thumbnailString + `>
-                                </div>`
-        })
+                                </div>`;
+        });
 
 
         console.log("content:");
