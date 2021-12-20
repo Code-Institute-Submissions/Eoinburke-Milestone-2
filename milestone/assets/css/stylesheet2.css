@@ -12,11 +12,16 @@ body {
   background: #3a6186; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color : #fff; 
+    color : #fff; ;
 }
 
 section {
 min-height: 100vh;
+  background: #3a6186; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color : #fff; ;
+
 }
 
 a { 
@@ -108,11 +113,9 @@ searchbar animation
 body, button, input {
 	font: 1em Hind, sans-serif;
 	line-height: 5.5em;
-    color: black;
+    
 }
-body, input {
-	color: #171717;
-}
+
 body, .search-bar {
 	display: flex;
 }
@@ -125,29 +128,13 @@ body {
 .search-btn:before, 
 .search-btn:after {
 	transition: all 0.25s ease-out;
-    color: black;
+  background: #3a6186; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color : #fff; ;
 }
 
-#container {
-    height: 100vh;
-    width: 100vw;
-    padding-bottom: 100px;
-    position: relative;
-  }
-  #image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  }
-  #text {
-    z-index: 100;
-    position: absolute;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    left: 150px;
-    top: 350px;
-  }
+
 
 .search-bar input,
 .search-btn {
@@ -195,7 +182,7 @@ body {
 	transform: scale(1);
 }
 .search-btn {
-	background: #171717;
+	
 	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
 	padding: 0.75em;
 	position: relative;
@@ -262,7 +249,10 @@ body {
 		color: #afa1fa;
 	}
 	body {
-		background: #171717;
+    background: #3a6186; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color : #fff; ;
 	}
 	.search-bar input {
 		box-shadow: 0 0 0 0.4em #f1f1f1 inset;

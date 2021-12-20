@@ -152,13 +152,13 @@ The website works as intended in Chrome, Mozilla and Microsoft Edge, on mobile i
 
 ### Validation
 
-HTML validation: https://validator.w3.org/  was used to validate the HTML code.
+HTML validation: https://validator.w3.org/  was used to validate the HTML code and there were no errors.
 <img src="milestone/assets/images/html.jpg">
 
-CSS validation: https://jigsaw.w3.org/css-validator/ was used to validate the CSS code.
+CSS validation: https://jigsaw.w3.org/css-validator/ was used to validate the CSS code there were no errors.
 <img src="milestone/assets/images/css.jpg">
 
-JavaScript validation: https://jshint.com/ was used to check the JavaScript code.
+JavaScript validation: https://jshint.com/ was used to check the JavaScript code there were no errors.
 
 ## Problems encountered
 
